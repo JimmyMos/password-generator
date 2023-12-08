@@ -1,0 +1,180 @@
+/*Old*/
+:root{
+    --black1: #1E1E1E;
+    --black2: #1D2327;
+    --black3: #181818;
+    --white1: #F0F0F1;
+    --white2: #ffffff;
+    --white3: #F6F7F7;
+    --white4: #f4f6fd;
+    --grey1: #9CA2A7;
+    --grey2: #2C3338;
+    --grey3: #c3c4c7;
+    --grey4: #e7e7e7;
+    --grey5: #747474;
+    --main_color: #2271B1;
+    --blue2: #135e96;
+    --blue3: #72AEE6;
+    --blue4: #509ad5;
+    --blue5: #f4f8ff;
+    --blue6: #9fb3c3;
+    --blue7: #394285;
+    --blue8: #0c1e40;
+    --red1: #b12222;
+    --red2: #961313;
+    --orange1: #e35400;
+    --orange2: #b33a00;
+    --green1: #1e9613;
+    --green2: #187e09;
+    --main_border: 1px solid var(--grey3);
+    --main_border2: 1px solid var(--blue6);
+    --dropshadow: 0 5px 15px rgb(0 0 0 / 20%);
+    --dropshadow2: 0 0px 8px rgb(34 113 177 / 20%);
+    --dropshadow3: 0 0px 2px rgb(0 0 0 / 44%);
+    --dropshadow4: 0 0px 4px rgb(0 0 0 / 10%);
+    --dropshadow5: 0 0px 2px 1px rgb(0 0 0 / 60%);
+    /*--transition1: ease-out all 0.2s;
+    --transition2: ease-out all 0.1s;*/
+    --interface_gap: 20px;
+}
+
+/*New*/
+:root{
+    --main_font: "Inter", "-apple-system", "system-ui", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif";
+    --secondary_font: '';
+    --third_font: '';
+    --purple1: #5a19ab;
+    --purple2: linear-gradient(327deg, rgb(69 37 167 / 75%) 30%, rgb(100 61 213 / 58%));
+    --purple3: #646cff;
+    --purple4: #585bd9;
+    --blue1: #585bd9;
+    --black1: #3c3e41;
+    --black2: #5a5a5d;
+    --black3: #212428;
+    --black4: #191b1e;
+    --black5: #000000;
+    --white1: #ffffff;
+    --white2: #ECF0F3;
+    --white3: #f6f6f7;
+    --white4: #c4cfde;
+    --grey1: #bdbdbd;
+    --tr_black1: #0000001c;
+    --tr_black2: #0000003d;
+    --tr_white1: #ecf0f388;
+    --gd_white1: linear-gradient(145deg, #e2e8ec, #ffffff);
+    --gd_black1: linear-gradient(145deg, #1e2024, #23272b);
+    --gd_black2: linear-gradient(to right bottom, #212428, #16181c);
+    --gd_blue_purple1: linear-gradient(145deg, rgba(39, 159, 239, 0.431372549), rgba(221, 162, 255, 0.5490196078));
+    --gd_blue_purple2: linear-gradient( 320deg, #bd34fe 30%, #41d1ff );
+    --boxshadow1: 0 0px 2px rgb(0 0 0 / 44%);
+    --boxshadow2: 0 0 10px rgba(0, 0, 0, 0.1);
+    --boxshadow3: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+    --boxshadow4: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+    --border1: 1px solid #dce1e4ab;
+    --transition1: 250ms;
+    --general_max_width: 1400px;
+    --gutter: 14vw;
+    --tablet_gutter: 8vw;
+    --mobile_gutter: 12px;
+}
+
+body{
+    --bg_color: var(--white2);
+    --font_color: var(--black1);
+    --mobile_menu_bg: var(--white1);
+    --hover_nav_item_bg: var(--white3);
+    --hilight1: var(--purple1);
+    --hide_bg: var(--tr_black1);
+    --card_bg: var(--gd_white1);
+    --card_boxshadow: var(--boxshadow3);
+    --hero_icon_hover_bg: var(--gd_blue_purple1);
+    --skill_card_bg_color: var(--white1);
+    --hidden_text_color: var(--grey1);
+    --cv_left_bar: #d9dee2;
+    --cv_bg: var(--gd_blue_purple1);
+    --cv_content_hover: var(--black5); 
+}
+
+body[theme=dark]{
+    --bg_color: var(--black3);
+    --font_color: var(--white4);
+    --mobile_menu_bg: var(--black4);
+    --hover_nav_item_bg: var(--tr_black2);
+    --hilight1: var(--purple4);
+    --hide_bg: var(--tr_black2);
+    --card_bg: var(--gd_black1);
+    --card_boxshadow: var(--boxshadow4);
+    --hero_icon_hover_bg: var(--gd_black2);
+    --skill_card_bg_color: unset;
+    --hidden_text_color: #636363;
+    --cv_left_bar: #17191c;
+    --cv_bg: var(--gd_black2);
+    --cv_content_hover: var(--white4);
+}
+
+/**********************************************/
+/*Animations***********************************/
+/**********************************************/
+@keyframes fadeIn {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes fadeOut {
+    0%   {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes inFromRightAndFadeOut {
+    0%   {transform: translateX(200%);}
+    5%  {transform: translateX(200%);}
+    10% {opacity: 1; transform: translateX(0);}
+    80% {opacity: 1; transform: translateX(0);}
+    100% {opacity: 0; transform: translateX(0);}
+}
+
+@keyframes outToRight {
+    0%   {transform: translateX(0%);}
+    50%  {transform: translateX(200%);}
+    100% {transform: translateX(200%);}
+}
+
+@keyframes fadeOut2 {
+    0%   {opacity: 1;}
+    50%  {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes rotate {
+    0%   {transform: translate(-50%,-50%) rotate(0deg);}
+    100% {transform: translate(-50%,-50%) rotate(360deg);}
+}
+
+@keyframes levitate {
+    0%   {transform: scale(100%) translateY(0);}
+    50%  {transform: scale(100%) translateY(-2%);}
+    100% {transform: scale(100%) translateY(0);}
+}
+
+@keyframes infromTop {
+    0%   {transform: translateY(-100vh); opacity: 0;}
+    50%  {transform: translateY(-100vh);}
+    100% {transform: translateY(0); opacity: 1;}
+}
+
+@keyframes outToTop {
+    0%   {transform: translateY(0);}
+    30%  {transform: translateY(-100vh);}
+    100% {transform: translateY(-100vh);}
+}
+
+@keyframes infinite_slider {
+	0%   {transform: translateX(0);}
+	100% {transform: translateX(-50%);}
+}
+
+
+@keyframes infinite_slider_reverse {
+	0%   {transform: translateX(-50%);}
+	100% {transform: translateX(0);}
+}

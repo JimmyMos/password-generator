@@ -1,0 +1,14 @@
+*{
+    margin:0;
+	padding:0;
+	border: 0;
+	box-sizing: border-box;
+    /**/
+	font-family:  var(--main_font);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    color: var(--font_color);
+    text-decoration: none;
+    padding-inline-start: 0;
+}
