@@ -2,4 +2,4 @@
 
 Generate a password online for free. It's never sent. The passwords you generate are created locally by the browser using JavaScript.
 
-Example on [www.password-generator.jimmymostovoi.com](https://www.password-generator.jimmymostovoi.com).
+Example on [password-generator.jimmymostovoi.com](https://password-generator.jimmymostovoi.com).

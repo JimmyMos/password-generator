@@ -149,7 +149,10 @@
     <link rel="stylesheet" href="/css/styles.css?11231">
 </svelte:head>
 
-<img class="forkme" src="/forkme.png" alt="">
+<div class="forkme">
+    <a href="https://github.com/Hashiramaa/password-generator" target="_blank"></a>
+    <img src="/forkme.png" alt="">
+</div>
 <h1>Free strong password generator 🔑</h1>
 <div class="main_container">
     <div class="pwd_cont">
@@ -397,5 +400,17 @@
         right: 0;
         width: 160px;
         height: 160px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        a{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+        }
     }
 </style>
