@@ -6,7 +6,7 @@
     import { hasClass, addClass, removeClass, getParentsList, findParent } from "@jimmymos/dom-helper"
     //
     import Signature from "$lib/signature.svelte";
-    //
+    // 
     var maxLength     = 128;
     var minLength     = 6;
     var defaultLength = 24;
